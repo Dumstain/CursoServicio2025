@@ -56,7 +56,7 @@ body {
 
 .mision-imagen {
     flex: 1; /* Ocupa el espacio disponible */
-    max-width: 18.1%; /* Limita el ancho de la imagen */
+    max-width: 18%; /* Limita el ancho de la imagen */
     background-image: url('../img/mision.png'); /* Reemplaza con la ruta de tu imagen */
     background-size: cover; /* Ajusta la imagen al contenedor */
     background-position: center; /* Centra la imagen */
