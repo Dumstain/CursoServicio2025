@@ -65,3 +65,17 @@ body {
     justify-content: center;
     align-items: center; /* Asegura que la imagen se mantenga centrada */
 }
+
+
+.vision{
+  display: flex;
+  margin: 10rem;
+  margin-top: 4rem;
+  gap: 5rem;
+  align-items: center;
+}
+
+.vision__img img{
+  height: 20rem;
+  width: 20rem;
+}
