@@ -22,8 +22,13 @@ nav ul {
 }
 
 nav ul img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+  transition: all 0.3s ease-in-out
+}
+
+nav ul img:hover{
+  transform: scale(1.25);
 }
 
 nav ul li {
@@ -34,7 +39,7 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 2rem;
   margin: 0 3rem;
   position: relative;
   transition: color 0.3s ease-in, background-color 0.3s ease-in-out;
@@ -73,8 +78,21 @@ nav ul li a:hover::after{
 
 .backImage img {
   display: block;
-  width: 320px;
+  width: 490px;
   max-width: 100%;
+  animation: zoomfloat 5s infinite ease-in-out ;
+}
+
+@keyframes zoomfloat{
+  0%{
+    transform: scale(1) translateY(0);
+  }
+  50%{
+    transform: scale(1.05) translateY(-10px);
+  }
+  100%{
+    transform: scale(1) translateY(0);
+  }
 }
 
 .main-content {
@@ -96,28 +114,28 @@ nav ul li a:hover::after{
 }
 
 .main-text h2 {
-  font-size: 28px;
+  font-size: 4rem;
   margin: 0;
 }
 
 .main-text p {
-  font-size: 16px;
+  font-size: 1.7rem;
   margin-top: 10px;
 }
 
 .main-search-input {
   display: flex;
-  width: 70%;
+  width: 65%;
   padding: 10px;
   border-radius: 30px;
   backdrop-filter: blur(5px);
 }
 
 .main input {
-  font-size: 20px;
+  font-size: 25px;
   width: 70%;
   height: 30px;
-  padding: 15px;
+  padding: 25px;
   border: none;
   outline: none;
   border-radius: 30px 0 0 30px;
@@ -130,12 +148,12 @@ nav ul li a:hover::after{
 
 .main button {
   width: 30%;
-  height: 60px;
+  height: 80px;
   background-color: rgb(0, 102, 204);
   color: white;
   border: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 0 30px 30px 0;
   transition: all 0.3s ease-in-out;
 }
